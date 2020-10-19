@@ -5,7 +5,6 @@ public class Calculator {
         String num1  = null ;
         String num2  = null;
         String operation = null;
-        String err  = null;
         int value1 = 0;
         int value2 = 0;
         System.out.println("Введите 2  целых числа  и операцию через пробел в одну строчку");
@@ -13,7 +12,6 @@ public class Calculator {
         num1 = scanner.next();
         operation = scanner.next();
         num2 = scanner.next();
-        err = scanner.next();
         ArabicNumbers arab=new ArabicNumbers();
         value1 = arab.toArabic(num1);
         value2 = arab.toArabic(num2);
@@ -58,7 +56,7 @@ public class Calculator {
             }
         }
         boolean t2=false;
-        t2 = (((s1  && s2 ) || (k1  && k2 )) && t1 && (err == null)) == true ? true : false;
+        t2 = (((s1  && s2 ) || (k1  && k2 )) && t1 ) == true ? true : false;
         try {
             if ( t2 == false) {
                 throw new Exception("Непонятно что введено");
