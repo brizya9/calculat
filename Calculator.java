@@ -27,7 +27,7 @@ public class Calculator {
         }
         
         for (int i = 0; i < arab3.length; i++) {
-            if(num1.equals(arab3[i])) {
+            if(num2.equals(arab3[i])) {
                 k2 = true;
                 break;
             }
@@ -42,7 +42,7 @@ public class Calculator {
             }
         }
         for (int i = 0; i < roman.length; i++) {
-            if(num1.equals(roman[i])) {
+            if(num2.equals(roman[i])) {
                 s2 = true;
                 break;
             }
