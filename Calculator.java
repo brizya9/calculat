@@ -50,7 +50,7 @@ public class Calculator {
         boolean t1=false;
         String[] oper=new String[]  {"+","-","*","/"};
         for (int i = 0; i < oper.length; i++) {
-            if(num1.equals(oper[i])) {
+            if(operation.equals(oper[i])) {
                 t1 = true;
                 break;
             }
